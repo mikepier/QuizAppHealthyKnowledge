@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Quiz App: Healthy Knowledge</string>
+    <string name="welcome">Welcome to Healthy Knowledge! </string>
+    <string name="description">The purpose of this test is to check your knowledge on health the fun way.
+        Relax and prepare for 5 exciting questions after which your knowledge will be assessed. Good luck!</string>
+    <string name="name_description">Please enter your name here</string>
+    <string name="getStarted">Let\'s get started!</string>
+    <string name="question">Question: </string>
+    <string name="next">Next question</string>
+    <string name="question1">Sleep is very important. Do you know how much time on average adults should sleep?</string>
+    <string name="yes">7-9 hours</string>
+    <string name="no">5-7 hours</string>
+    <string name="question2">Magnesium strenghtens our immune system and decreases risk of diabetes. Which of the below listed vegetables contain it? You can choose more than one!</string>
+    <string name="nuts">Nuts</string>
+    <string name="apples">Apples</string>
+    <string name="seeds">Seeds</string>
+    <string name="question3">It was bred in Brittany, France, has on average 200 seeds but is small. It has also anticancer properties and
+        tastes great with chocolate. What fruit is it? \nType in your answer below!</string>
+    <string name="fruit_answer">Write your answer here</string>
+    <string name="question4">Avocados fruit is known for being rich in monounsaturated fat. Do you know in which popular
+        dish it is commonly used?</string>
+    <string name="answer41">Greek salad</string>
+    <string name="answer42">Escabeche</string>
+    <string name="answer43">Guacamole</string>
+    <string name="answer44">Tzatziki</string>
+    <string name="answer45">Tuzlama</string>
+    <string name="question5">Finally, being aware of cardiopulmonary resuscitation might pay off in most unexpected situations.
+    Choose a number of pushes you should make between checking if a person started breathing.</string>
+    <string name="complete">You\'ve completed the Healthy Knowledge test!</string>
+    <string name="youlost">Unfortunately not all of your answers were correct. How about making some research and then
+    clicking the TRY AGAIN button below? Good luck!</string>
+    <string name="youwon">You are really good at these things - all of the answers were correct! Congratulations!
+        \nHow about recommending this app to your friends? Click the button recommend below.
+        \nOr pass this phone to your friend and click TRY AGAIN.</string>
+    <string name="recommend">Recommend this app</string>
+    <string name="tryagain">Try again</string>
+
+
+</resources>
