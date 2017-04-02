@@ -10,17 +10,27 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import static com.example.android.quizapphealthyknowledge.Activity_Question.q1;
+import static com.example.android.quizapphealthyknowledge.R.id.numberChoice;
 
 public class Activity_Question5 extends AppCompatActivity {
 
     public static boolean q5 = false;
     Button startButton;
     int quantity = 1;
+    private static final String KEY_TEXT_VALUE = "textValue";
+    private TextView numberChoiceTv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__question5);
+
+        numberChoiceTv = (TextView) findViewById(R.id.numberChoice);
+
+        if (savedInstanceState != null) {
+            CharSequence savedText = savedInstanceState.getCharSequence(KEY_TEXT_VALUE);
+            numberChoiceTv.setText(savedText);
+        }
 
         startButton = (Button) findViewById(R.id.getStarted);
         startButton.setOnClickListener(new View.OnClickListener() {
@@ -29,7 +39,7 @@ public class Activity_Question5 extends AppCompatActivity {
              */
             @Override
             public void onClick(View v) {
-                TextView chosenNumber = ((TextView) findViewById(R.id.numberChoice));
+                TextView chosenNumber = ((TextView) findViewById(numberChoice));
                 if (quantity == 30) {
                     q5 = true;
                     Toast.makeText(getApplicationContext(), "Good answer!",
@@ -48,6 +58,12 @@ public class Activity_Question5 extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    protected void onSaveInstanceState (Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putCharSequence(KEY_TEXT_VALUE, numberChoiceTv.getText());
     }
     /**
      * This method increments the numberChoice TextView.
@@ -81,7 +97,7 @@ public class Activity_Question5 extends AppCompatActivity {
 
     private void displayQuantity(int quantity) {
         TextView quantityTextView = (TextView) findViewById(
-                R.id.numberChoice);
+                numberChoice);
         quantityTextView.setText("" + quantity);
     }
 

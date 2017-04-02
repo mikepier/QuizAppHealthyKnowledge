@@ -34,6 +34,9 @@
         \nOr pass this phone to your friend and click TRY AGAIN.</string>
     <string name="recommend">Recommend this app</string>
     <string name="tryagain">Try again</string>
+    <string name="maxRound">/5</string>
+    <string name="finish">finish the quiz</string>
+
 
 
 </resources>
